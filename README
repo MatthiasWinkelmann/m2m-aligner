@@ -1,5 +1,11 @@
 Many-to-Many alignment model (m2m-aligner)
 
+## This fork
+
+fixed makefile(s) for current MacOS 10.15 "Catalina". 'makefile' as checked in uses the faster hash library, which is about 30% faster than the alternative in ''makefile.default''. Path to library currently hardcoded in ''makefile'' to the location of boost installed with Homebrew.
+
+## m2m-aligner
+
 m2m-aligner is implemented by Sittichai Jiampojamarn during the PhD's years at the department of Computing Science, University of Alberta. 
 This algorithm has been applied in letter-to-phoneme conversion, name transliteration and other tasks; 
 for example, please see the below list of known publications that utilized the m2m-aligner.

@@ -35,7 +35,7 @@
 
 // require STLport //
 #ifdef USESTLPORT
-#include <hash_map>
+#include <unordered_map>
 #endif
 
 using namespace std;
@@ -98,8 +98,8 @@ typedef map<string, hash_StrDouble> hash_2StrDouble;
 
 // use STLport //
 #ifdef USESTLPORT
-typedef hash_map<string, long double, hash<string>, eqstr> hash_StrDouble;
-typedef hash_map<string, hash_StrDouble, hash<string>, eqstr> hash_2StrDouble;
+typedef unordered_map<string, long double, hash<string>, eqstr> hash_StrDouble;
+typedef unordered_map<string, hash_StrDouble, hash<string>, eqstr> hash_2StrDouble;
 #endif
 
 
